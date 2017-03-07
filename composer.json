@@ -1,0 +1,23 @@
+{
+	"name": "opauth/google",
+	"description": "Google strategy for Opauth",
+	"keywords": ["authentication","auth","google"],
+	"homepage": "http://opauth.org",
+	"license": "blog-nitc",
+	"authors": [
+		{
+			"name": "yogendra",
+			"email": "steptostep93@gmail.com",
+			"homepage": "https://blog-nitc.herokuapp.com/blog-home.php"
+		}
+	],
+	"require": {
+		"php": ">=5.2.0",
+		"opauth/opauth": ">=0.2.0"
+	},
+	"autoload": {
+		"psr-0": {
+			"": "."
+		}
+	}
+}
