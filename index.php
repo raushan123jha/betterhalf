@@ -147,8 +147,11 @@
                                       <li class="sub-menu"><a href="javascript:{}"><img src="img/memberlb.png" width="200" height="100"></a>
                                            <ul>
                                               <li><a href="#"><img src="img/gllb.png" width="300" height="100"></a></li>
-											  <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>
-                                           <!--   <li><a href="#"><img src="img/fblb.png" width="300" height="100"></a></li>	-->										  
+					      <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>
+                                               FB.logout(function(response) {
+  						 // Person is now logged out
+						});
+						<!--   <li><a href="#"><img src="img/fblb.png" width="300" height="100"></a></li>	-->										  
                                           </ul>
                                       </li>
 
