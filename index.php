@@ -22,6 +22,15 @@
   js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8&appId=1870014203236364";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+<!-- ##################logout ###################-->	
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8&appId=1870014203236364";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <!--##########################Second FB login ####################################-->
 <script>
@@ -148,9 +157,7 @@
                                            <ul>
                                               <li><a href="#"><img src="img/gllb.png" width="300" height="100"></a></li>
 					      <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>
-                                               FB.logout(function(response) {
-  						 // Person is now logged out
-						});
+                                              <div class="fb-login-button" data-max-rows="1" data-size="icon" data-show-faces="false" data-auto-logout-link="true"></div>
 						<!--   <li><a href="#"><img src="img/fblb.png" width="300" height="100"></a></li>	-->										  
                                           </ul>
                                       </li>
