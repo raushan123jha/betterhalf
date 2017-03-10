@@ -1,112 +1,66 @@
-
-<!-- ############################JYOTI###########################-->
-<!DOCTYPE html>
-<html lang="en">
+<html>
+<title>
+BETTER HALF
+</title>
+<link href="css/drop.css" rel="stylesheet" type="text/css" />
 <head>
-<meta charset="utf-8">
-<title>BETTER HALF</title>
 
-
-<link href="css/bootstrap.css" rel="stylesheet">
-<link href="css/theme.css" rel="stylesheet">
 </head>
-<body>
-	<!--header-->
-    <div class="header">
-		<div class="follow_us">
-                                <ul>
-                                   <li><a href="#" class="facebook">Facebook</a></li>
-                                    <li><a href="#" class="vimeo">Vimeo</a></li>
-                                    <li><a href="#" class="tumbrl">Tumbrl</a></li>
-                                    <li><a href="#" class="twitter">Twitter</a></li>
-                                    <li><a href="#" class="delicious">Delicious</a></li>
-                                </ul>
-                            </div></div>
-    	<div class="wrap">
-            	<div class="container">
-                    <div class="row">
-                        <div class="span4">
-                        	<div class="logo"><a href="homepage.html"><img src="img/logo.png" alt="" /></a></div>                        
-                        </div>
-                        <div class="span8">
-                        	
-                            <nav id="main_menu">
-                                <div class="menu_wrap">
-                                    <ul class="nav sf-menu">
-                                      <li class="current"><a href="index.php">Home</a></li>
-                                      <li><a href="about.php">About</a></li>
-                                     
-                                      <li><a href="contact.html">Contacts</a></li>									  
-                                      <li class="sub-menu"><a href="javascript:{}"><img src="img/memberlb.png" width="200" height="100"></a>
-                                           <ul>
-                                              <li ><a href="view-profile.php"><p class="drop-down">Profile</p></a></li>
-                                              <li><a href="edit-profile.php"><p class="drop-down">Edit Profile</p></a></li> 
-											  <li><a href="search-partner.php"><p class="drop-down">Search Partner</p></a></li>
-											  <li><a href="view-request.php"><p class="drop-down">View Request</p></a></li>  
-											  <li><a href="index.php"><p class="drop-down">Logout</p></a></li> 
-                                          </ul>
-                                      </li>
+<body bgcolor="white" onload="startTime();">
+<table border-spacing="40px 10px">
+<tr><td colspan="2"><hr color="maroon" size="15px"></td></tr>
 
-                                    </ul>
-                                </div>
-                             </nav>                            
-                        </div>
-                    </div>                
-             </div>
-        </div>    
-    
-    <!--//header-->    
-     <hr color="maroon" size="8px">
-          <!--slider-->
-        <div id="main_slider">
-            <div class="camera_wrap" id="camera_wrap_1">
-                <div data-src="img/slider/3.jpg"></div>
-                <div data-src="img/slider/2.jpg"></div>
-                <div data-src="img/slider/1.jpg"></div>                                        
-            </div>
-            <div class="clear"></div>	
-        </div>        
-        <!--//slider-->
-                       
-        <!--space-->
-        <div class="wrap planning">
-            <div class="container">
-                <!--space between slide and thought-->
-            </div>
-        </div>
-        <!--//space-->
-        <!--thought-->
-        <div class="wrap block">
-            <div class="container welcome_block">
-            	<div class="welcome_line welcome_t"></div>
-            	<span>YOU MADE A WISH &amp; BETTER HALF MAKES TRUE....!!!!!!</span>
-                <div class="welcome_line welcome_b"></div>
-            </div>
-        </div>
-    <!--footer-->
-    <div id="footer">
-  
-<div id="templatemo_footer_wrapper">
-<div id="templatemo_footer_panel" style="color:#F9F7F6">
-    BETTER HALF |  by AVNISH AGRAHARI,RAUSHAN JHA,MOHD ARSH,YOGENDRA,JYOTI PANDEY
-    <div class="margin_bottom_20"></div>
-	</div> 
-</div>
-    </div>
-    <!--//footer-->    
+<tr>
+<td height="80" style="width:1500px" bgcolor="white"> <center>
+<a href="index.php"><img src="img/logo.png" alt="" height="80" /></a></center>
+</td>
+<td  height="80" style="width:200px">
 
-		<script src="js/demo.js"></script>
-           <script type="text/javascript" src="js/camera.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/superfish.js"></script>
-     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript">
-		$(document).ready(function(){	
-			//Slider
-			$('#camera_wrap_1').camera();												
-		});		
-	</script>
+<div class="container" id="drop">
+            <ul class="menu">
+                          <li><a href="#">name</a>
+                    <ul class="submenu">
+                        <li><a href="view-profile.php">view profile</a></li>
+                        <li><a href="edit-profile.php">edit profile</a></li>
+                        <li><a href="search-partner.php">search partner</a></li>
+                        <li><a href="view-request.php">view request</a></li>
+                        <li><a href="logout.php"><img src="img/lg.png" height="100" width="100"/></a></li>
+                    </ul>
+				</li>
+				</ul>
+				</div>
+</td>
+</tr>
+<tr><td colspan="2"><hr color="maroon" size="6px"></td></tr>
+</table>
+
+<table>
+<tr>
+
+<td colspan="2" width="1510">
+
+</td>
+</tr>
+<tr>
+<td colspan="2"><center>
+<img id="img2" / width="1200" height="700">
+<script>
+var imgArray = new Array("img/images/1.jpg","img/images/2.jpg","img/images/3.jpg","img/images/4.jpg" ,"img/images/5.jpg" ,"img/images/6.jpg" ,"img/images/7.jpg" ,"img/images/8.jpg");
+var imgCount = 0;
+function startTime() {
+    if(imgCount == imgArray.length) {
+        imgCount = 0;
+    }
+    document.getElementById("img2").src = imgArray[imgCount];
+    imgCount++;
+    setTimeout("startTime()", 5000);
+}
+</script>
+</center>
+</td>
+</tr>
+</table>
+
 </body>
+
 </html>
-
-
