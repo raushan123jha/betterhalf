@@ -1,7 +1,7 @@
 
 
 
-<!-- ############################JYOTI###########################-->
+<!-- ######################################################-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -148,7 +148,7 @@
                                               <li><a href="user-portal.php"><img src="img/gllb.png" width="300" height="100"></a></li>
 						   
 					      <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>
-                                              <div class="fb-login-button" data-max-rows="1" data-size="Logout" data-show-faces="false" data-auto-logout-link="true"></div>
+                                              <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></div>
 						<!--   <li><a href="#"><img src="img/fblb.png" width="300" height="100"></a></li>	-->										  
                                           </ul>
                                       </li>
