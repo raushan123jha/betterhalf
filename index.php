@@ -118,21 +118,22 @@
 <!-- ##########################FB login Closed #############################-->
 
 	<!--header-->
-    <div class="header">
+     <div class="header">
 	<div class="follow_us">
                                 <ul>
                                    <li><a href="www.facebook.com" class="facebook">Facebook</a></li>
-                                    <li><a href="#" class="vimeo">Vimeo</a></li>
-                                    <li><a href="#" class="tumbrl">Tumbrl</a></li>
+                                    <li><a href="www.vimeo.com" class="vimeo">Vimeo</a></li>
+                                    <li><a href="www.tumbrl.com" class="tumbrl">Tumbrl</a></li>
                                     <li><a href="www.twitter.com" class="twitter">Twitter</a></li>
-                                    <li><a href="#" class="delicious">Delicious</a></li>
+                                    <li><a href="www.del.icio.us" class="delicious">Delicious</a></li>
                                 </ul>
                             </div></div>
     	<div class="wrap">
+		
             	<div class="container">
                     <div class="row">
                         <div class="span4">
-                        	<div class="logo"><a href="index.php"><img src="img/logo.png" alt="" width="800"/></a></div>                        
+                        	<div class="logo"><a href="index.php"><img src="img/logo.png" alt=""/></a></div>                        
                         </div>
                         <div class="span8">
                         	
@@ -145,11 +146,8 @@
                                       <li><a href="contact.php">Contacts</a></li>									  
                                       <li class="sub-menu"><a href="javascript:{}"><img src="img/memberlb.png" width="200" height="100"></a>
                                            <ul>
-                                              <li><a href="user-portal.php"><img src="img/gllb.png" width="300" height="100"></a></li>
-						   
-					      <!--<div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>-->
-                                              <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true"></div>
-						<!--   <li><a href="#"><img src="img/fblb.png" width="300" height="100"></a></li>	-->										  
+                                              <li><a href="sign-in-google.php"><img src="img/gllb.png" width="300" height="100"></a></li>
+                                              <li><a href="user-portal.php"><img src="img/fblb.png" width="300" height="100"></a></li>											  
                                           </ul>
                                       </li>
 
