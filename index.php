@@ -99,7 +99,7 @@
     FB.api('/me', function(response) {
       console.log('Successful login for: ' + response.name);
       document.getElementById('status').innerHTML =
-        'Thanks for logging in, ' + response.name + '!';
+        'Welcome to Better-Half, ' + response.name + '!';
     });
   }
 </script>
@@ -145,7 +145,7 @@
                                       <li><a href="contact.html">Contacts</a></li>									  
                                       <li class="sub-menu"><a href="javascript:{}"><img src="img/memberlb.png" width="200" height="100"></a>
                                            <ul>
-                                              <li><a href="#"><img src="img/gllb.png" width="300" height="100"></a></li>
+                                              <li><a href="user-portal.php"><img src="img/gllb.png" width="300" height="100"></a></li>
 						   
 					      <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>
                                               <div class="fb-login-button" data-max-rows="1" data-size="Logout" data-show-faces="false" data-auto-logout-link="true"></div>
