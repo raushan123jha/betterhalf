@@ -132,7 +132,7 @@
             	<div class="container">
                     <div class="row">
                         <div class="span4">
-                        	<div class="logo"><a href="index.php"><img src="img/logo.png" alt=""/></a></div>                        
+                        	<div class="logo"><a href="index.php"><img src="img/logo.png" alt="" width="800"/></a></div>                        
                         </div>
                         <div class="span8">
                         	
@@ -140,9 +140,9 @@
                                 <div class="menu_wrap">
                                     <ul class="nav sf-menu">
                                       <li class="current"><a href="index.php">Home</a></li>
-                                      <li><a href="about.html">About</a></li>
+                                      <li><a href="about.php">About</a></li>
                                      
-                                      <li><a href="contact.html">Contacts</a></li>									  
+                                      <li><a href="contact.php">Contacts</a></li>									  
                                       <li class="sub-menu"><a href="javascript:{}"><img src="img/memberlb.png" width="200" height="100"></a>
                                            <ul>
                                               <li><a href="user-portal.php"><img src="img/gllb.png" width="300" height="100"></a></li>
