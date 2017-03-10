@@ -132,7 +132,7 @@
             	<div class="container">
                     <div class="row">
                         <div class="span4">
-                        	<div class="logo"><a href="index.php"><img src="img/logo.png" alt="" height="200" width="100"/></a></div>                        
+                        	<div class="logo"><a href="index.php"><img src="img/logo.png" alt="" height="400" width="800"/></a></div>                        
                         </div>
                         <div class="span8">
                         	
