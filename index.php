@@ -97,6 +97,7 @@
   function testAPI() {
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
+	    var p1=response.name;
       document.getElementById('status').innerHTML =
         'Welcome to Better-Half, ' + response.name + '!'
     });
@@ -135,7 +136,11 @@
                         	<div class="logo"><a href="index.php"><img src="img/logo.png" alt=""/></a></div>                        
                         </div>
                         <div class="span8">
-                        	
+				<!-- #############change#############-->
+                        	<?php
+echo "<script>document.writeln(p1);</script>";
+?>
+				<#-- Change ############### -->
                             <nav id="main_menu">
                                 <div class="menu_wrap">
                                     <ul class="nav sf-menu">
