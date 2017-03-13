@@ -97,12 +97,8 @@
   function testAPI() {
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
-      console.log('Successful login for: ' + response.name);
-	    console.log('Successful login for: ' + response.username);
       document.getElementById('status').innerHTML =
-        'Welcome to Better-Half, ' + response.name + '!';
-	    document.getElementById('status').innerHTML =
-        'Welcome to Better-Half, ' + response.username + '!';
+        'Welcome to Better-Half, ' + response.name + '!'
     });
   }
 </script>
