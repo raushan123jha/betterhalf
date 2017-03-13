@@ -140,7 +140,7 @@
                         	<?php
 echo "<script>document.writeln(p1);</script>";
 ?>
-				<#-- Change ############### -->
+				<!-- Change ############### -->
                             <nav id="main_menu">
                                 <div class="menu_wrap">
                                     <ul class="nav sf-menu">
