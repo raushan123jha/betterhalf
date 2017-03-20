@@ -31,7 +31,7 @@ BETTER HALF
 				</div>
 </td>
 </tr>
-<tr><td colspan="2"><hr color="maroon" size="6px"></td></tr>
+<tr><td colspan="2"><hr color="maroon" size="7px"></td></tr>
 </table>
 </body>
 </html>
