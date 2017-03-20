@@ -1,7 +1,7 @@
 <?php
 session_start();
 include('connection.php');
-include('send_request.php');
+//include('send_request.php');
 echo $_SESSION['first_name']." ".$_SESSION['last_name'];
 $_SESSION['aftersearch'] = $_SERVER['REQUEST_URI'];
 ?>
