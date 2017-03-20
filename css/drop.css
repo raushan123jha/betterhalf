@@ -1,9 +1,7 @@
-
 .container {
     margin: 10px auto;
     width: 100%;
 }
-
 .menu, .menu ul {
     list-style: none;
     padding: 0;
@@ -228,5 +226,3 @@
     -o-transition-delay: 0s;
     transition-delay: 0s;
 }
-
-
