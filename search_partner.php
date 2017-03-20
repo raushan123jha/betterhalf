@@ -42,7 +42,7 @@
 			<div>
 		    
 		      	<span class="required">Qualification: </span>
-		      	<input type="text" id="qualification" name="qualification" value="" placeholder="partner's qualification" tabindex="2" />
+		      	<input type="text" id="qualification" name="qualification" value="" placeholder="partner's Qualification" tabindex="2" />
 		      
 		      </div>
 		      	<div>
@@ -54,17 +54,17 @@
 		      <div>
 		    
 		      	<span class="required">Income: </span>
-		      	<input type="text" id="income" name="income" value="" placeholder="partner's income" tabindex="2"/>
+		      	<input type="text" id="income" name="income" value="" placeholder="partner's Income" tabindex="2"/>
 		    
 		      <div>
 		    
 		      	<span class="required">Cast: </span>
-		      	<input type="text" id="cast" name="cast" value="" placeholder="partner's cast" tabindex="2"/>
+		      	<input type="text" id="cast" name="cast" value="" placeholder="partner's Cast" tabindex="2"/>
 		      
 		      <div>
 		     
 		      	<span class="required">Color: </span>
-		      	<input type="text" id="color" name="color" value="" placeholder="partner's color" tabindex="2"/>
+		      	<input type="text" id="color" name="color" value="" placeholder="partner's Color" tabindex="2"/>
 		      
 		     
 			<div>		          
