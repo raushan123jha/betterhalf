@@ -97,7 +97,7 @@ BETTER HALF
 			{
 				echo "<tr><td><font color='red'>For contact information register</td><td><font color='red'>as prime member</font></td></tr>";
 			}
-           }echo "</table>";
+           }echo "</table> ";
 	     }	
 	   }
 }
