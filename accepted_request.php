@@ -1,10 +1,11 @@
 <?php
-session_start();
-include('connection.php');
+session_start();  //session start
+include('connection.php');  //connection file include
 ?>
 <html>
 	<head>
-	<link href="css/frame.css" rel="stylesheet">
+	<!--link for css file-->
+	<link href="css/frame.css" rel="stylesheet">        
 	<link href="css/frame_menu.css" rel="stylesheet">
 	</head>
 <body>
@@ -13,35 +14,39 @@ include('connection.php');
 			<div id="social_icon"><a href="www.facebook.com">
 			<img src="img/facebook_icon.png" class="header_icon"></a><a href="www.facebook.com">
 			<img src="img/twitter_icon.png" class="header_icon"></a><a href="www.google.com"><img src="img/google_icon.png" class="header_icon"></a></div>
-		</div>
-		<div class="topnav" id="myTopnav">
+	</div>
+	<div class="topnav" id="myTopnav">
 			<a href="user_portal.php" id="home_link">Home</a>
 				<a href="view_profile.php">Profile</a>
-					<a href="View_request.php"> View Request</a>
+					<a href="view_request.php"> View Request</a>
 					<a href="accepted_request.php">Accepted Requests</a>
 					<a href="view_notification.php"> Notifications</a>
 				<a href="logout.php">Logout</a>
 			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-		</div>
-		<script>
-		function myFunction() {
+	</div>
+	<script>
+		function myFunction() 
+		{
 			var x = document.getElementById("myTopnav");
-			if (x.className === "topnav") {
+			if (x.className === "topnav")
+			{
 				x.className += " responsive";
-			} else {
+			} else 
+			{
 				x.className = "topnav";
 			}
 		}
-		</script>
-		<div id="main_section">
-			<?php echo "<img src='img/requested_people.png' id='requested_people'><p id='requested_text'>Accepted Requests</p>" ;//SESSION VARIABLE VALUE 
+	</script>
+	<div id="main_section">
+	<?php
+    	echo "<img src='img/requested_people.png' id='requested_people'><p id='requested_text'>Accepted Requests</p>" ;     
 			// ############################PHP CODE FOR VIEW REQUEST####################//
 			include('respond_request.php'); ?>
 			<br><br><br><hr color=" #d7d1d0" size="1px">
-<?php 
-		$user_from = $_SESSION['email_id'];
+   <?php 
+		$user_from = $_SESSION['email_id']; //taking email_id from session
 		//$user_count = 0;
-		$total_request_res = $conn->query("select senderid from request where receiverid='$user_from' and request_status='Accepted'");
+		$total_request_res = $conn->query("select senderid from request where receiverid='$user_from' and request_status='Accepted'");       //query for showing senderid with accpeted request
 		//echo "<br><table id='table_id' border='1px'>";
 		while($senders = $total_request_res->fetch_array(MYSQLI_BOTH)){
 		$sender_id = $senders['senderid'];
@@ -51,7 +56,8 @@ include('connection.php');
 					if($senders_details== '.' || $senders_details=='..') continue;
 				{
 				}
-		?>
+		?> 
+		<!--code for showing profile picture and first name,last name,profession,location,marital status,gender of accepted request of better half user -->
 			<table id='table_id' >
 				<tr ><td rowspan='4' id="image_data" ><?php echo "<img  width='120' height='120' src='profile_pictures/".$senders_details['profile_pic']. "'></td>";?></td><td >
 				<font size='6px' color=" #1c2833"><?php echo "<a href='view_sender_profile.php?serial_no=".$senders_details['serial_no']. " '>" ;
