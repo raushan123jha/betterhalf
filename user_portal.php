@@ -3,8 +3,6 @@ session_start();
 include('connection.php');
 include('send_request.php');
 ?>
-
-
 <html>
 <title>
 BETTER HALF
@@ -14,6 +12,9 @@ BETTER HALF
 
 </head>
 <body bgcolor="white" onload="startTime();">
+
+<!-- #############Header section ###########-->
+
 <table border-spacing="40px 10px">
 <tr><td colspan="2"><hr color="maroon" size="15px"></td></tr>
 
@@ -21,25 +22,29 @@ BETTER HALF
 <td height="80" style="width:1500px" bgcolor="white"> <center>
 
 
-<?php
+<?php  
+	// ***************Diplaying Name at the Header **************
+	
 echo "<font color='green'> Welcome: " .$_SESSION['first_name']." ".$_SESSION['last_name']."</font>"; //SESSION VARIABLE VALUE ?> 
+
+<!-- ***************Menu Bar for Navigation*************-->
 
 <a href="index.php"><img src="img/logo.png" alt="" height="80" /></a></center>
 </td>
 <td  height="80" style="width:200px">
 <div class="container" id="drop">
             <ul class="menu">
-                          <li><img src="img/menu_bar.jpg" height="58px" width="200px"></a>
-                    <ul class="submenu">
-                        <li><a href="view_profile.php">view profile</a></li>
-                        <li><a href="edit_profile.php">edit profile</a></li>
-                        <li><a href="search_partner.php">search partner</a></li>
-                        <li><a href="view_request.php">view request</a></li>
-                        <li><a href="logout.php"><img src="img/lg.png" height="100" width="100"/></a></li>
-                    </ul>
-				</li>
-				</ul>
-				</div>
+                      <li><img src="img/menu_bar.jpg" height="58px" width="200px"></a>
+						<ul class="submenu">
+							<li><a href="view_profile.php">view profile</a></li>
+							<li><a href="edit_profile.php">edit profile</a></li>
+							<li><a href="search_partner.php">search partner</a></li>
+							<li><a href="view_request.php">view request</a></li>
+							<li><a href="logout.php"><img src="img/lg.png" height="100" width="100"/></a></li>
+						</ul>
+					</li>
+			</ul>
+</div>
 </td>
 </tr>
 <tr><td colspan="2"><hr color="maroon" size="6px"></td></tr>
@@ -47,15 +52,15 @@ echo "<font color='green'> Welcome: " .$_SESSION['first_name']." ".$_SESSION['la
 
 <table>
 <tr>
-
 <td colspan="2" width="1510">
-
 </td>
 </tr>
 <tr>
 <td colspan="2"><center>
-<img id="img2" / width="1200" height="700">  
+<img id="img2" / width="1200" height="550">  
 <script>
+<!-- *************Java Script Code for Menu bar ************-->
+
 var imgArray = new Array("img/images/1.jpg","img/images/2.jpg","img/images/3.jpg","img/images/4.jpg" ,"img/images/5.jpg" ,"img/images/8.jpg");
 var imgCount = 0;
 function startTime() {
@@ -67,11 +72,16 @@ function startTime() {
     setTimeout("startTime()", 3000);
 }
 </script>
+<!-- *******************END of script code ********************-->
+
 </center>
 </td>
 </tr>
 </table>
 
-</body>
+<!-- ******************FOOTER SECTION *******************-->
 
+<div class="footer">
+	<center>Copyright@Group6-NITC</center></div>
+</body>
 </html>
