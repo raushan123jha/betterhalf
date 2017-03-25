@@ -13,7 +13,7 @@ include('google_login.php');
 <link href="css/theme.css" rel="stylesheet">
 </head>
 <body>
-	<!--header-->
+	<!-- *************Code for Header Section*****************-->
     <div class="header">
 	<div class="follow_us">
                                 <ul>
@@ -24,17 +24,18 @@ include('google_login.php');
                                     <li><a href="www.del.icio.us" class="delicious">Delicious</a></li>
                                 </ul>
                             </div></div>
+							<!-- *************Code for navigation*****************-->
     	<div class="wrap">
 		
             	<div class="container">
                     <div class="row">
                         <div class="span4">
-                        	<div class="logo"><a href="index.php"><img src="img/logo.png" alt=""/></a></div>   <?php $_SESSION['email_id']='akansha@rediffmail.com';
-								$_SESSION['first_name'] = "Akansha";
-								$_SESSION['last_name'] = "Singh";
+                        	<div class="logo"><a href="index.php"><img src="img/logo.png" alt=""/></a></div>   <?php //$_SESSION['email_id']='akansha@rediffmail.com';
+								//$_SESSION['first_name'] = "Akansha";
+								//$_SESSION['last_name'] = "Singh";
 							
 							
-							echo "<font color='green'> Welcome: " .$_SESSION['first_name']." ".$_SESSION['last_name']."</font>" ?>                      
+							//echo "<font color='green'> Welcome: " .$_SESSION['first_name']." ".$_SESSION['last_name']."</font>" ?>                      
                         </div>
                         <div class="span8">
                         	
@@ -42,15 +43,14 @@ include('google_login.php');
                                 <div class="menu_wrap">
                                     <ul class="nav sf-menu">
                                       <li class="current"><a href="index.php">Home</a></li>
-                                      <li><a href="about.php">About</a></li>
+                                      <li><a href="about.html">About</a></li>
                                      
-                                      <li><a href="contact.php">Contacts</a></li>									  
+                                      <li><a href="contact.html">Contacts</a></li>									  
                                       <li class="sub-menu"><a href="javascript:{}"><img src="img/memberlb.png" width="200" height="100"></a>
                                            <ul>
                                               <li><!--a href="sign-in-google.php"><img src="img/gllb.png" width="300" height="100"></a></li-->
 											  <a rel="nofollow" href=<?php echo $output; ?> class="external-link">
-											  <i class="glyphicon glyphicon-lock"></i><img src="img/gllb.png" width="300" height="100"></a>
-                                              <li><a href="user_portal.php"><img src="img/fblb.png" width="300" height="100"></a></li>											  
+											  <i class="glyphicon glyphicon-lock"></i><img src="img/gllb.png" width="300" height="100"></a>											  
                                           </ul>
                                       </li>
 
