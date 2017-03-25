@@ -4,6 +4,7 @@ include('connection.php');
 ?>
 <html>
 	<head>
+	<!-- *************Code for Header Section*****************-->
 	<link href="css/frame.css" rel="stylesheet">
 	<link href="css/frame_menu.css" rel="stylesheet">
 	</head>
@@ -14,10 +15,11 @@ include('connection.php');
 			<img src="img/facebook_icon.png" class="header_icon"></a><a href="www.facebook.com">
 			<img src="img/twitter_icon.png" class="header_icon"></a><a href="www.google.com"><img src="img/google_icon.png" class="header_icon"></a></div>
 		</div>
+		<!-- *************Code for menu baar*****************-->
 		<div class="topnav" id="myTopnav">
 			<a href="user_portal.php" id="home_link">Home</a>
 				<a href="view_profile.php">Profile</a>
-					<a href="View_request.php"> View Request</a>
+					<a href="view_request.php"> View Request</a>
 				<a href="accepted_request.php">Accepted Requests </a>
 				<a href="view_notification.php">Notifications </a>
 				<a href="logout.php">Logout</a>
